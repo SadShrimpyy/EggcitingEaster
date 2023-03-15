@@ -1,0 +1,12 @@
+name: EggcitingEaster
+version: '${project.version}'
+main: com.sadshrimpy.eggcitingeaster.EggcitingEaster
+api-version: 1.18
+authors: [SadShrimpy]
+description: A brand new plugin made for your greatest easter!
+website: Coming soon...
+commands:
+  eggcitingeaster:
+    aliases:
+      - easter
+      - ea

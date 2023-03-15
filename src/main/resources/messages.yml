@@ -1,0 +1,68 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# '-----------------------------------------------------------------------------------' #
+# |                                                                                   | #
+# |     ______                 _ _   _               ______          _                | #
+# |    |  ____|               (_) | (_)             |  ____|        | |               | #
+# |    | |__   __ _  __ _  ___ _| |_ _ _ __   __ _  | |__   __ _ ___| |_ ___ _ __     | #
+# |    |  __| / _` |/ _` |/ __| | __| | '_ \ / _` | |  __| / _` / __| __/ _ \ '__|    | #
+# |    | |___| (_| | (_| | (__| | |_| | | | | (_| | | |___| (_| \__ \ ||  __/ |       | #
+# |    |______\__, |\__, |\___|_|\__|_|_| |_|\__, | |______\__,_|___/\__\___|_|       | #
+# |            __/ | __/ |                    __/ |                                   | #
+# |           |___/ |___/                    |___/                                    | #
+# '-----------------------------------------------------------------------------------' #
+#                                                                                       #
+#     Developed:                     My profile page:                                   #
+#     By SadShrimpy#9190 with <3  -  https://www.spigotmc.org/members/shiry.583821/     #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Plugin's related messages
+prefix: "&7[&dEggciting&cEaster&7] &8> &7" # Prefix of the plugin
+reloaded: 
+  correctly: "&7Plugin reloaded &acorrectly&7."
+  incorrectly: "&7Plugin reloaded &cincorrectly&7."
+
+# Player's related messages
+player:
+  config:
+    # When a player try to execute a command without the right permission
+    no-permission: "&7Hey &e%player-name%&7, you &cdon't have &7the permission &8(%permission%)&7, to execute: &b%command%&7."
+    # When a player try to execute a command that isn't exist
+    cmd-not-found: "&7Hey &e%player-name%&7, sorry but the requested command &b(%command%) &cisn't &7found&7."
+  give:
+    # When a player receive the easter egg
+    received: "&7Hey &e%player-name%&7, you received a &deaster egg &8(%egg-name%) &7from &f%player-executor%&7."
+    # When a player give the easter egg to another player
+    executor: "&7Hey &e%player-name%&7, you just sent a &deaster egg &7to: &f%player-target%&7."
+  found:
+    # When a player find an egg
+    valid-egg: "&7Hey &e%player-name%&7, &c&ocongratulations&7! You have found an &deaster egg&7!"
+    # When a player find an egg
+    expired-egg: "&7Hey &e%player-name%&7, sorry but this &deaster egg &7is &cexpired&7! &8:("
+  placed:
+    # When a player place an egg
+    egg: "&7Egg placed corectly!"
+  retrive:
+    # When a player retrive an egg
+    successfully: "&7Hey &e%player-name%&7, here your fantastic &deaster egg&7!"
+    # When a console try to retrive an egg
+    console: "&7Hey &eConsole&7, sorry but only a player can retrive an &deaster egg&7!"
+  generic:
+    # When the target player is not online
+    no-online: "&7Hey &e%player-name%&7, sorry there are &cno &eplayers &7present in the server."
+    # When the target player is not founded
+    not-found: "&7Hey &e%player-name%&7, sorry but the player &f%player-target% &cisn't &7found&7."
+    # When the target player try to get an egg that does not exist
+    egg-not-found: "&7Hey &e%player-name%&7, sorry but the requested egg, with id &c%egg-id%&7, does &cnot &fexist!&7."
+    # When the target has the inventory full, the egg will be dropped on the ground
+    dropped: "Hey! You received an &deaster egg&7! It was dropped on the ground: your pockets are full!"
+
+help:
+  generic: # Message shown through the help command (/eggcitingeaster help)
+    - "&7&m------------------&7[ &dEggciting&cEaster &7]&m------------------"
+    - "&6/eggcitingeaster help &8- &7view the generic help menu (this)."
+    - "&6/eggcitingeaster give <player/*> <eggID> &8- &7give a special egg (with the configured ID), ready to be founded."
+    - "&6/eggcitingeaster retrive <eggID> &8- &7retrive a special egg (with the configured ID), ready to be founded."
+    - "&6      -> Place this in the surroundings, and wait to be founded :)."
+    - "&6/eggcitingeaster reload &8- &7reload the plugin."
+    - "&6Plugin alias &8- &7ea &8- &7easter."
+    - "&7&m------------------&7[ &dEggciting&cEaster &7]&m------------------"

@@ -1,0 +1,71 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# '-----------------------------------------------------------------------------------' #
+# |                                                                                   | #
+# |     ______                 _ _   _               ______          _                | #
+# |    |  ____|               (_) | (_)             |  ____|        | |               | #
+# |    | |__   __ _  __ _  ___ _| |_ _ _ __   __ _  | |__   __ _ ___| |_ ___ _ __     | #
+# |    |  __| / _` |/ _` |/ __| | __| | '_ \ / _` | |  __| / _` / __| __/ _ \ '__|    | #
+# |    | |___| (_| | (_| | (__| | |_| | | | | (_| | | |___| (_| \__ \ ||  __/ |       | #
+# |    |______\__, |\__, |\___|_|\__|_|_| |_|\__, | |______\__,_|___/\__\___|_|       | #
+# |            __/ | __/ |                    __/ |                                   | #
+# |           |___/ |___/                    |___/                                    | #
+# '-----------------------------------------------------------------------------------' #
+#                                                                                       #
+#     Developed:                     My profile page:                                   #
+#     By SadShrimpy#9190 with <3  -  https://www.spigotmc.org/members/shiry.583821/     #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Do not modify this value, it may CORRUPT the entire config file!
+version: v1.0-Relase
+
+egg-interaction:
+  commands: # Command to be executed when the player click on them - executed as console
+    - "give %clicker% diamond_block 6"
+    - "give %clicker% chicken_spawn_egg 16"
+  click-event:
+    destroy-egg: true # If true the egg will be destroyed
+    particles:
+      # Format -> "PARTICLE:QUANTITY"
+      - "EXPLOSION_LARGE:2"
+      - "FLAME:4"
+      - "FLASH:1"
+
+egg-item: # You can add as may egg as you want
+  the-greatest: # This is the ID, MUST BE UNIQUE
+    name: "&eThe &e&lGreatest &dEgg"
+    lore:
+      - "&7Hey!!"
+      - "&7I wanna &cplay &7with you :D"
+      - "&7Go and found all the eggs through the map!"
+      - "&e&lGood Luck!"
+    # Custom head values can be found here (e.g): https://minecraft-heads.com/custom-heads/
+    head-value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNmOWVlZGEzYmEyM2ZlMTQyM2M0MDM2ZTdkZDBhNzQ0NjFkZmY5NmJhZGM1YjJmMmI5ZmFhN2NjMTZmMzgyZiJ9fX0="
+    commands: # Command to be executed when the player click on them - executed as console
+      - "give %clicker% diamond_block 6"
+      - "give %clicker% chicken_spawn_egg 16"
+    click-event:
+      destroy-egg: true # If true the egg will be destroyed
+      particles:
+        # Format -> "PARTICLE:QUANTITY"
+        - "EXPLOSION_HUGE:2"
+        - "FIREWORKS_SPARK:4"
+        - "VILLAGER_HAPPY:1"
+        - "TOWN_AURA:6"
+  the-stinky-one:
+    name: "&eThe &8Stinky &dEgg"
+    lore:
+      - "&7Hey!!"
+      - "&7I wanna &cplay &7with you :D"
+      - "&7Go and found all the eggs through the map!"
+      - "&e&lGood Luck!"
+    head-value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjlhNGVhYmVmOGViMDhhMmNlZGE0YmZhZDI4Zjg3OGY3NWMxYWY0OGFjZDc4OGQzNGNjMjFmMzMyYWYxZDEzYSJ9fX0="
+    commands: # Command to be executed when the player click on them - executed as console
+      - "give %clicker% crimson_fungus 23"
+      - "give %clicker% dirt 42"
+      - "give %clicker% stone 64"
+    click-event:
+      destroy-egg: false
+      particles:
+        - "EXPLOSION_NORMAL:1"
+        - "TOWN_AURA:6"
+  # You can add more and more configurations...
