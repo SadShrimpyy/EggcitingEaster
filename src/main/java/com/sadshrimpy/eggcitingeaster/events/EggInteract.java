@@ -82,7 +82,6 @@ public class EggInteract extends EventManager{
         if (sadLibrary.map == null) return;
 
         String perm = getPermission(skullUuid);
-        System.out.println("1: " + perm);
 
         if (!perm.equals("no-needed"))
             if (!player.hasPermission(perm)) {
@@ -92,28 +91,30 @@ public class EggInteract extends EventManager{
                 return;
             }
 
-        System.out.println("2: " + perm);
-
         if (sadLibrary.map.containsKey(skullUuid)) {
             // Is a valid one
-            player.sendMessage(msg.viaChat(true, msgConf.getString("player.found.valid-egg")
-                    .replace(sadLibrary.placeholders().getPlayerName(), player.getName())));
-            Location location = skull.getLocation();
-
-            // Destroy
-            if (executeActions(player.getName(), skullUuid))
-                Objects.requireNonNull(Bukkit.getWorld(skull.getWorld().getUID())).setType(location, Material.AIR);
-
-            // Particles
-            configConf.getStringList(pathBuilder(skullUuid) + ".click-event.particles").forEach(str -> {
-                String[] temp = str.split(":");
-                player.spawnParticle(Particle.valueOf(temp[0]), location, Integer.parseInt(temp[1]));
-            });
+            validEgg(skull, skullUuid, player);
         } else {
             // Is not a valid one
             player.sendMessage(msg.viaChat(true, msgConf.getString("player.found.expired-egg")
                     .replace(sadLibrary.placeholders().getPlayerName(), player.getName())));
         }
+    }
+
+    private void validEgg(Skull skull, UUID skullUuid, Player player) {
+        player.sendMessage(msg.viaChat(true, msgConf.getString("player.found.valid-egg")
+                .replace(sadLibrary.placeholders().getPlayerName(), player.getName())));
+        Location location = skull.getLocation();
+
+        // Destroy
+        if (executeActions(player.getName(), skullUuid))
+            Objects.requireNonNull(Bukkit.getWorld(skull.getWorld().getUID())).setType(location, Material.AIR);
+
+        // Particles
+        configConf.getStringList(pathBuilder(skullUuid) + ".click-event.particles").forEach(str -> {
+            String[] temp = str.split(":");
+            player.spawnParticle(Particle.valueOf(temp[0]), location, Integer.parseInt(temp[1]));
+        });
     }
 
     private String getPermission(UUID skullUuid) {
