@@ -1,7 +1,7 @@
 ![Logo](https://i.imgur.com/MVToLiQ.png)
 
 #### Eggciting Easter
-Check the plugin on [SpigotMC]( "SpigotMC.org")
+Check the plugin on [SpigotMC](https://www.spigotmc.org/resources/eggciting-easter-custom-textures-drops-particles-interactions-commands-much-more.108640/ "SpigotMC.org")
 
 ## Description
 Easter party on Minecraft never so much fun! Customize eggs with exclusive textures, unlock special drops and enjoy wonderful particles. What are you waiting for? Create your own party! 🐰🐣🎉
@@ -12,10 +12,11 @@ Let the server's Admid (or whoever is responsible for it), hide the eggs around 
 ## Features
 * Add **as many egg** as you want
 * Custom head (egg) value
+* Interact with the egg (click on them) to **retrive the gifts**
 * _Per egg permission_ to **retrive the gifts**
 * Custom plugin's **prefix**
-* Display **particles** at interaction moment
-* Execute **commands** as _console_
+* Display **any particles** at the interaction moment (per egg particles)
+* Execute **any commands** as _console_ at the interaction moment (per egg particles)
 * **100% translatable** via messages.yml
 * Give the selected Easter egg, to a specific player
 * Give the selected Easter egg, to all online players.
@@ -25,9 +26,9 @@ Let the server's Admid (or whoever is responsible for it), hide the eggs around 
 ## Commands
 * `/eggcitingeaster reload`: Reload the plugin
 * `/eggcitingeaster help`: View the generic help menu
-* `/eggcitingeaster give <name> <eggID>`: Give a special egg to only one player
-* `/eggcitingeaster give * <eggID>`: Give a special egg to all the online players
-* `/eggcitingeaster retrive <eggID>`: Retrive a special egg just for you
+* `/eggcitingeaster give <name> <eggID>`: Gives a special egg to only one player
+* `/eggcitingeaster give * <eggID>`: Gives a special egg to all the online players
+* `/eggcitingeaster retrive <eggID>`: Retrives a special egg just for you
 
 ### Command alias
 * `easter`
