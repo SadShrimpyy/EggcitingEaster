@@ -9,6 +9,7 @@
 # |    |______\__, |\__, |\___|_|\__|_|_| |_|\__, | |______\__,_|___/\__\___|_|       | #
 # |            __/ | __/ |                    __/ |                                   | #
 # |           |___/ |___/                    |___/                                    | #
+# |                                                                                   | #
 # '-----------------------------------------------------------------------------------' #
 #                                                                                       #
 #     Developed:                     My profile page:                                   #
@@ -55,6 +56,8 @@ player:
     egg-not-found: "&7Hey &e%player-name%&7, sorry but the requested egg, with id &c%egg-id%&7, does &cnot &fexist!&7."
     # When the target has the inventory full, the egg will be dropped on the ground
     dropped: "Hey! You received an &deaster egg&7! It was dropped on the ground: your pockets are full!"
+    # When a player try to interact with an easter egg, without the right permission
+    no-permission: "&7Hey &e%player-name%&7, you &cdon't have &7the permission &8(%permission%)&7, to retrive the gifts &c:( &7."
 
 help:
   generic: # Message shown through the help command (/eggcitingeaster help)
